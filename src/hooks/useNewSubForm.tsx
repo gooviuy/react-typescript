@@ -34,7 +34,6 @@ const formReducer = (
       return {
         ...state,
         [inputName]: inputValue,
-        ///      [e.target.name]: e.target.value, Es lo mismo qe hacemos en handle change, solo que sin el evento.
       };
     case "clear":
       return INITIAL_STATE;

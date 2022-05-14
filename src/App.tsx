@@ -19,19 +19,8 @@ const INITIAL_STATE = [
   },
 ];
 
-//definimos el contrato :
-/* interface Sub {
-  nickName: string;
-  age: number;
-  description?: string;
-  icon?: string;
-}
- */
 function App() {
-  //definimos que el estado sera una array del contrato Sub, que se inicializa vacio.
   const [subs, setSubs] = useState<Array<Sub>>([]);
-  //Otra forma de definirlo:
-  /* const [subs, setSubs] = useState<Sub[]>([]); */
 
   useEffect(() => setSubs(INITIAL_STATE), []);
 
